@@ -19,8 +19,8 @@
                     <input type="text" name="display" id="display">
                 </div>
                 <div>
-                    <input type="button" value="AC" onclick="display.value ='' " class="operator">
-                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
+                    <input type="button" value="AC" onclick="clear()" class="operator">
+                    <input type="button" value="DE" onclick="deleteNumber()" class="operator">
                     <input type="button" value="." onclick="concatenate('.')" class="operator">
                     <input type="button" value="/" onclick="concatenate('/')" class="operator">
                 </div>
@@ -28,7 +28,7 @@
                     <input type="button" value="7" onclick="concatenate('7')">
                     <input type="button" value="8" onclick="concatenate('8')">
                     <input type="button" value="9" onclick="concatenate('9')">
-                    <input type="button" value="*" onclick="concatenate('*') class="operator">
+                    <input type="button" value="*" onclick="concatenate('*')" class="operator">
                 </div>
                 <div>
                     <input type="button" value="4" onclick="concatenate('4')">
